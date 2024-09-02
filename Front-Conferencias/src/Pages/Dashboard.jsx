@@ -8,7 +8,12 @@ export default function Dashboard() {
                 <h1 className="text-white">Bienvenido al módulo principal</h1>
                 <p className="text-white">Alan</p>
                 <div className="mt-4 flex flex-col items-center gap-y-4">
-                    <button className="group relative z-10 inline-flex h-11 select-none items-center justify-center overflow-hidden rounded-md border-2 border-solid px-6 py-0 text-black tracking-wide outline-0 duration-300 ease-in-out bg-white border-black group-hover:text-black focus:text-black group-hover:fill-black">Cerrar Sesión</button>
+                <Link
+                        key="Cerrar Sesión"
+                        className="w-3/5 hover:scale-105 sm:w-1/4"
+                        to="/login"
+                    ><button className="group relative z-10 inline-flex h-11 select-none items-center justify-center overflow-hidden rounded-md border-2 border-solid px-6 py-0 text-black tracking-wide outline-0 duration-300 ease-in-out bg-white border-black group-hover:text-black focus:text-black group-hover:fill-black">Cerrar Sesión</button>
+                </Link>
                 </div>
             </header>
             <section className="flex flex-col">
@@ -23,10 +28,10 @@ export default function Dashboard() {
                     >
                         <article className="rounded-2xl bg-black text-white">
                             <h2 className="p-1.5 text-center text-xl font-bold">
-                                conferencistas
+                                Conferencistas
                             </h2>
                             <img
-                                className="size-full rounded-b-2xl image-size equal-image"
+                                className="rounded-b-2xl w-100 h-50"
                                 src="../../public/conferencista.jpeg"
                                 alt="conferencistas"
                             />
@@ -42,7 +47,7 @@ export default function Dashboard() {
                                 Auditorios
                             </h2>
                             <img
-                                className="size-full rounded-b-2xl image-size equal-image"
+                                className="size-full rounded-b-2xl w-150 h-200"
                                 src="../../public/auditorio.jpg"
                                 alt="Auditorios"
                             />
@@ -58,7 +63,7 @@ export default function Dashboard() {
                                 Reservas
                             </h2>
                             <img
-                                className="size-full rounded-b-2xl image-size equal-image"
+                                className="size-full rounded-b-2xl w-150 h-200"
                                 src="../../public/Reserva.jpg"
                                 alt="Reservas"
                             />
