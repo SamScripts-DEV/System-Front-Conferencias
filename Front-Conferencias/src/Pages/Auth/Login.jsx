@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Login() {
+export default function Login() {
     return (
         <div className="flex w-full h-screen items-center justify-center py-4">
             <div className="flex w-full sm:w-2/3">
